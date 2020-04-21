@@ -58,9 +58,12 @@ R() {
 		}
 		menu
 		set() {
+			w
 			apt update
+			w
 			apt upgrade
 			apt install python
+			w
 	apt install figlet
 	echo "#!/data/data/com.termux/files/usr/bin/sh" >> hack
 	echo "bash $PREFIX/bin/phone.sh" >> hack
@@ -74,5 +77,6 @@ R() {
 	if [ -f hack ];then
 	menu
 	else
+	w
 	set
 	fi
